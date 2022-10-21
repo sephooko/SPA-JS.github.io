@@ -22,6 +22,14 @@ let pageUrls = {
     history.pushState(stateObj, "faq", "?faq");
     RenderfaqPage();
    });
+   document.querySelector('#sign-link').addEventListener('click', (event) => {
+    let stateObj = {
+    page: 'sign'
+    }
+    document.title = 'sign';
+    history.pushState(stateObj, "sign", "?sign");
+    RenderfaqPage();
+   });
    function RenderAboutPage(params) {
     document.querySelector('main').innerHTML =
     `<h1 class="title">Our Mission</h1>`;
@@ -47,5 +55,8 @@ let pageUrls = {
     if(loc === pageUrls.about){
     RenderAboutPage();
     }
-   }
+    if (loc === pageUrls.sign){
+        RenderSignUpPage();
+    }
+}
    window.onpopstate = popStateHandler;
