@@ -42,12 +42,16 @@ let pageUrls = {
    });
    function RenderAboutPage(params) {
     document.querySelector('main').innerHTML =
-    `<h1 class="title">Our Mission</h1>`;
+    `<h1 class="title">Our Mission</h1>
+    `;
    }
    function RenderfaqPage(params) {
     document.querySelector('main').innerHTML =
     `<h1 class="title">Frequently Asked Questions</h1>
-    <p>Question: How much does it cost?</p></b><p>Answear: Go to pricing</p>`;
+    <p>Question: How much does it cost?</p></b><p>Answear: Go to pricing tab to check our current offers.</p>
+    <p>Question: Who can buy a course?</p></b><p>Answear: Anyone! Our courser are so inclusive that no matter who you are, human, alien or a cat - We have a course JUST for you!</p>
+    <p>Question: Do you offer a refund if I dont get a job after completing your course?</p></b><p>Answear: No.</p>
+    <p>Question: How can I sign up for a course?</p></b><p>Answear: Go to SignUp tab to easily sign up for our courses.</p>`;
    }
    function RenderPricingPage(params) {
     document.querySelector('main').innerHTML =
@@ -184,11 +188,11 @@ let pageUrls = {
    function RenderSignUpPage(params) {
     document.querySelector('main').innerHTML =
     `
-    <div class="text-center"> 
+    <div class="text-center">
     <main class="form-signin w-100 m-auto">
         <form>
         <h1 class="h3 mb-3 fw-normal">Sing Up Now!</h1>
-    
+
         <div class="form-floating">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Email address</label>
@@ -197,7 +201,7 @@ let pageUrls = {
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
         </div>
-    
+
         <div class="checkbox mb-3">
             <label>
             <input type="checkbox" value="remember-me"> Remember me
